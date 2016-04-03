@@ -1,1 +1,1 @@
-# java_webapp_base
+# java_webapp
