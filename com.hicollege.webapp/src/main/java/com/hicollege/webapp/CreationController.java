@@ -18,7 +18,6 @@ public class CreationController {
     private Dao dao;
 
     @RequestMapping(value = "/users", method = RequestMethod.PUT)
-    @ResponseBody
     public void createUser(
         @RequestParam(value = "username", required = true) String username,
         @RequestParam(value = "age", required = true) int age,
@@ -40,7 +39,6 @@ public class CreationController {
     }
 
     @RequestMapping(value = "/albums", method = RequestMethod.PUT)
-    @ResponseBody
     public void createAlbum(
         @RequestParam(value = "title", required = true) String title,
         @RequestParam(value = "songs", required = true) List<String> songs,
